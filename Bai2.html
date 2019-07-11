@@ -21,12 +21,13 @@
     }
 
     function listPrimes(arr) {
+        let arrPrime = [];
         for (let i = 0; i < arr.length; i++) {
             if (isPrime(arr[i])) {
-                console.log(arr[i]);
+                arrPrime.push(arr[i]);
             }
         }
-        return arr;
+        return arrPrime;
     }
 
     console.log(listPrimes(arr));
