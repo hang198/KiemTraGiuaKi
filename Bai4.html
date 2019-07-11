@@ -6,12 +6,13 @@
 </head>
 <body>
 <script>
-    let inputArray = [[1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9]];
-    let outputArray = [];
+    let inputArray =
+        [[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]];
 
-    function createArray() {
+    function createArray(inputArray) {
+        let outputArray = [];
         for (let i = 0; i < inputArray.length; i++) {
             if (i % 2 !== 0) {
                 inputArray[i].reverse();
@@ -21,10 +22,10 @@
                 outputArray.push(inputArray[i][j]);
             }
         }
-        console.log(outputArray);
+        return outputArray;
     }
 
-    createArray();
+    createArray(inputArray);
 </script>
 </body>
 </html>
